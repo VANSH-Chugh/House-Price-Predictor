@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Housing Price Predictor App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Housing Price Predictor</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
+
+<div class="container my-5">
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <h1 class="text-body-emphasis">The House Price Predictor App</h1>
+    <p class="lead">
+      This is a house price predictor app which can predict housing prices provided with the following data
+    </p>
+  </div>
+</div>
+
+    <div class="container">
+      <form method="GET">
+          <div class="mb-3">
+            <label class="form-label">Enter Your Income</label>
+            <input type="text" class="form-control" name="income" id="income">
+            <label class="form-label">Enter Your House Age</label>
+            <input type="text" class="form-control" name="age" id="age">
+            <label class="form-label">Enter Total Number Of Rooms</label>
+            <input type="text" class="form-control" name="rooms" id="rooms">
+            <label class="form-label">Enter Population in your area</label>
+            <input type="text" class="form-control" name="population" id="population">
+          </div>
+          <button type="submit" class="btn btn-outline-warning" value= "Submit">Predict Price</button>
+        </form>
+    </div>
+
+      <br><br><br>
+      <h2> {{ result }}</h2>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
